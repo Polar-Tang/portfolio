@@ -13,17 +13,16 @@ export default function SvgComponentNavbarSlime() {
         setIsAnimating(true)
 
         // Optional: Auto-reset animation after completion for demo purposes
-        const timer = setTimeout(() => {
-            setIsAnimating(false)
-            setTimeout(() => setIsAnimating(true), 300)
-        }, 3000)
+        // const timer = setTimeout(() => {
+        //     setIsAnimating(false)
+        //     setTimeout(() => setIsAnimating(true), 300)
+        // }, 3000)
 
-        return () => clearTimeout(timer)
     }, [])
     class MotionVariantFactory {
         static baseConfig = {
-          duration: 20,
-          ease: "easeInOut",
+          duration: 10,
+          ease: "easeOut",
           delay: 0,
         //   yoyo: true,
         //   repeat: Infinity,
