@@ -170,21 +170,6 @@
   .static {
     position: static;
   }
-  .top-1 {
-    top: calc(var(--spacing) * 1);
-  }
-  .top-1\/2 {
-    top: calc(1/2 * 100%);
-  }
-  .top-1\/4 {
-    top: calc(1/4 * 100%);
-  }
-  .top-3 {
-    top: calc(var(--spacing) * 3);
-  }
-  .top-3\/4 {
-    top: calc(3/4 * 100%);
-  }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
@@ -197,11 +182,11 @@
   .h-16 {
     height: calc(var(--spacing) * 16);
   }
-  .h-50 {
-    height: calc(var(--spacing) * 50);
-  }
   .h-auto {
     height: auto;
+  }
+  .h-dvh {
+    height: 100dvh;
   }
   .h-screen {
     height: 100vh;
@@ -230,8 +215,20 @@
   .border-collapse {
     border-collapse: collapse;
   }
+  .-translate-y-20 {
+    --tw-translate-y: calc(var(--spacing) * -20);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-30 {
+    --tw-translate-y: calc(var(--spacing) * -30);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
   .-translate-y-50 {
     --tw-translate-y: calc(var(--spacing) * -50);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-y-50 {
+    --tw-translate-y: calc(var(--spacing) * 50);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .transform {
@@ -290,6 +287,42 @@
   .md\:top-3\/4 {
     @media (width >= 48rem) {
       top: calc(3/4 * 100%);
+    }
+  }
+  .md\:ml-60 {
+    @media (width >= 48rem) {
+      margin-left: calc(var(--spacing) * 60);
+    }
+  }
+  .md\:w-300 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 300);
+    }
+  }
+  .md\:-translate-y-30 {
+    @media (width >= 48rem) {
+      --tw-translate-y: calc(var(--spacing) * -30);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .lg\:mt-120 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 120);
+    }
+  }
+  .lg\:mb-20 {
+    @media (width >= 64rem) {
+      margin-bottom: calc(var(--spacing) * 20);
+    }
+  }
+  .lg\:ml-120 {
+    @media (width >= 64rem) {
+      margin-left: calc(var(--spacing) * 120);
+    }
+  }
+  .lg\:w-500 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 500);
     }
   }
 }
