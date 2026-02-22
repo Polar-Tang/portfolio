@@ -1,0 +1,5 @@
+@media (min-width: 768px) {
+  .no-bg-md {
+    background-image: none !important;
+  }
+}
