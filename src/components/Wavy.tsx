@@ -32,9 +32,9 @@ const Wavy = () => {
 
 
         ScrollTrigger.create({
-            trigger: document.body,
+            trigger: overlay, // anchored to the svg itself, so page height changes don't shift the animation
             start: "top bottom",
-            end: "40% top",
+            end: "bottom top",
             // markers: true,
             scrub: true,
             animation: tl,
