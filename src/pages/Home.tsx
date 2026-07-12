@@ -78,8 +78,8 @@ const Home = () => {
                     <img src='/discord.png' alt='footer'  />
                 </Link>
                    
-                <Link to={"https://www.roblox.com/users/8742003634/profile/#!#creations"} target="_blank" className='h-48 w-16 basis-24 z-1'>
-                    <img src='/Roblox.png' alt='footer' className='h-full w-full object-contain' />
+                <Link to={"https://www.youtube.com/@VirtualNautilus"} target="_blank" className='h-48 w-16 basis-24 z-1'>
+                    <img src='/youtube.png' alt='footer' className='h-full w-full object-contain' />
                 </Link>
             </div>
         </>
